@@ -1,0 +1,2 @@
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fconstexpr-backtrace-limit=0 -fconstexpr-depth=4294967295 -fconstexpr-steps=4294967295 ")
+add_definitions(-DBOOST_ASIO_HAS_STD_INVOKE_RESULT -DBOOST_ASIO_HAS_RETURN_TYPE_DEDUCTION -DBOOST_ASIO_DISABLE_CONCEPTS )

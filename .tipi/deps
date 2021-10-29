@@ -1,0 +1,14 @@
+{
+  "platform" : ["Boost::system" ]
+  , "mapbox/eternal" : {}
+  , "boostorg/pfr" : {}
+  , "cpp-pre/json" : { "@" : "feature/compile-time-key-value-pairs"}
+  , "tipi-build/constexpr_all_the_things" : { "@" : "feature/json-substrings-as-types" }
+  , "nxxm/xxhr" : {
+    "requires": {
+      "nxxm/js-bind" : { "@" : "v0.0.3" }
+      , "aantron/better-enums" : { "@" : "0.11.1" }
+      , "platform:macos-cxx20" : [ "Boost::system", "OpenSSL::+SSL", "OpenSSL::+Crypto" ]
+    }
+  }
+}
