@@ -7,7 +7,7 @@ It allows compile time C++ code generation for an OpenAPI configuration.
 ## To compile the project and pull dependencies run 
 Get a free tipi by registering to [tipi.build](https://tipi.build)
 ```
-tipi . -t macos-cxx20
+tipi build . -t linux-cxx20
 ```  
 
 ## CppCon 2021 Talk
