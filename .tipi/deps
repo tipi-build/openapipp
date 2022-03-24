@@ -2,10 +2,12 @@
   "platform" : ["Boost::system" ]
   , "mapbox/eternal" : { "@" : "v1.0.1" }
   , "cpp-pre/json" : { "@" : "compile-time-key-value-pairs"
-      , "nlohmann/json" :  { "@" : "v3.1.2", "x" : ["benchmarks"] }
-      , "boostorg/pfr" : { "@" : "2.0.3" }
-      , "tipi-build/constexpr_all_the_things" : { "@" : "cppcon2021-json-string-as-types" }
-      , "platform" : [ "Boost::+boost" ]
+      , "requires": {
+         "nlohmann/json" :  { "@" : "v3.1.2", "x" : ["benchmarks"] }
+        , "boostorg/pfr" : { "@" : "2.0.3" }
+        , "tipi-build/constexpr_all_the_things" : { "@" : "cppcon2021-json-string-as-types" }
+        , "platform" : [ "Boost::+boost" ]
+      }           
   }
   , "tipi-build/constexpr_all_the_things" : { "@" : "cppcon2021-json-string-as-types" }
   , "nxxm/xxhr" : { "@" : "v1.0.2",
